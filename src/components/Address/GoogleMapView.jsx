@@ -49,11 +49,11 @@ const GoogleMapView = ({ setAddress, mapCenter, setMapCenter }) => {
           }
         },
         (error) => {
-          console.error("Error getting user's location:", error);
+          toast.error("Error getting user's location:", error);
         }
       );
     } else {
-      console.error("Geolocation is not supported by this browser.");
+      toast.error("Geolocation is not supported by this browser.");
     }
   }, []);
 
@@ -78,7 +78,7 @@ const GoogleMapView = ({ setAddress, mapCenter, setMapCenter }) => {
       setAddress(getAdress);
       setMapCenter(newPosition);
     } catch (error) {
-      console.log(error);
+      toast.error("Error!");
     }
   };
 
@@ -101,7 +101,7 @@ const GoogleMapView = ({ setAddress, mapCenter, setMapCenter }) => {
           setMapCenter(newPosition);
           setAdressSearching(false);
         } catch (error) {
-          console.log(error);
+          toast.error(error);
         }
       }
     }

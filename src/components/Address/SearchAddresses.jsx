@@ -7,9 +7,9 @@ const SearchAddresses = ({ setAdressSearching, isLoaded }) => {
   const handlePlaceChanged = () => {
     const place = inputRef.current.getPlace();
     if (place && place.geometry) {
-      console.log(place.formatted_address);
-      console.log(place.geometry.location.lat());
-      console.log(place.geometry.location.lng());
+      // console.log(place.formatted_address);
+      // console.log(place.geometry.location.lat());
+      // console.log(place.geometry.location.lng());
     }
   };
 
