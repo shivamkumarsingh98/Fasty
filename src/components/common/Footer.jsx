@@ -56,7 +56,7 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold text-lg mb-4">Company</h4>
             <ul className="space-y-2 cursor-pointer">
-              <li onClick={() => navigate("/")}>Home</li>
+              <li onClick={() => navigate("/OTPLogin")}>Home</li>
               <li onClick={() => navigate("/")}>Delivery Areas</li>
               <li onClick={() => navigate("/")}>Careers</li>
               <li onClick={() => navigate("/Support")}>Customer Support</li>

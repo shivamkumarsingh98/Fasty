@@ -93,7 +93,6 @@ const PaymentButton = ({ address, appliedOffer }) => {
       {address ? (
         <button
           type="submit"
-          disabled
           className="primary-bg-darker-pink text-white py-2 rounded-md my-6 mx-2 flex justify-center items-center relative group"
           onClick={createOrderHandeler}
         >
@@ -103,7 +102,7 @@ const PaymentButton = ({ address, appliedOffer }) => {
             "CONTINUE TO PAYEMNT"
           )}
           <span className="hidden group-hover:block absolute left-1/2 -translate-x-1/2 mt-20 text-green-500 font-bold animate-pulse">
-          Available very soon in your area
+            Available very soon in your area
           </span>
         </button>
       ) : (
