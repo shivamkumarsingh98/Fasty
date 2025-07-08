@@ -9,7 +9,6 @@ import Cart from "../components/Cart/Cart";
 import Home from "../components/Home/Home";
 import PrivacyPolicy from "../components/common/PrivacyPolicy";
 import TermsAndConditions from "../components/common/TermsAndConditions";
-import ShopRegistration from "../components/Shop/shopRegistion";
 import OTPLogin from "../components/Account/OTPLogin";
 
 const MyRoutes = () => {
@@ -25,7 +24,7 @@ const MyRoutes = () => {
         path="/category/:id/:subid/:productid"
         element={<ProductDetails />}
       />
-      <Route path="/shopRegistion" element={<ShopRegistration />} />
+      {/* <Route path="/shopRegistion" element={<ShopRegistration />} /> */}
       <Route path="/OTPLogin" element={<OTPLogin />} />
 
       <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
