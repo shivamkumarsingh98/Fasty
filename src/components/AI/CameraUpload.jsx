@@ -34,7 +34,7 @@ export const CameraUpload = () => {
         style={{ display: "none" }}
       />
 
-      {preview && (
+      {/* {preview && (
         <div style={{ marginTop: "20px" }}>
           <p>Preview:</p>
           <img
@@ -43,7 +43,7 @@ export const CameraUpload = () => {
             style={{ maxWidth: "300px", borderRadius: "10px" }}
           />
         </div>
-      )}
+      )} */}
     </div>
   );
 };
