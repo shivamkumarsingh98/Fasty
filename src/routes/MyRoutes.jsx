@@ -24,7 +24,6 @@ const MyRoutes = () => {
         path="/category/:id/:subid/:productid"
         element={<ProductDetails />}
       />
-      {/* <Route path="/shopRegistion" element={<ShopRegistration />} /> */}
       <Route path="/OTPLogin" element={<OTPLogin />} />
 
       <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />

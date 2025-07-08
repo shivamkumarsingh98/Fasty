@@ -1,6 +1,6 @@
 // import React, { useState } from "react";
 
-// const ShopRegistration = () => {
+// const ShopRegistion = () => {
 //   // State for form data
 //   const [formData, setFormData] = useState({
 //     shopName: "",
@@ -200,4 +200,4 @@
 //   );
 // };
 
-// export default ShopRegistration;
+// export default ShopRegistion;
