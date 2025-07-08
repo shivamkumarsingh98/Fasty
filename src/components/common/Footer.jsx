@@ -35,7 +35,7 @@ const Footer = () => {
               <li>Cleaning Essentials</li>
               <li>Homegrown Brands</li>
               <li>Dairy Products</li>
-              <li>Frozen Foods</li>
+              {/* <li>Frozen Foods</li>
               <li>Beverages</li>
               <li>Snacks & Sweets</li>
               <li>Bakery Products</li>
@@ -48,7 +48,7 @@ const Footer = () => {
               <li>Pet Supplies</li>
               <li>Stationery</li>
               <li>Electronics</li>
-              <li>Clothing & Accessories</li>
+              <li>Clothing & Accessories</li> */}
             </ul>
           </div>
 
@@ -97,7 +97,7 @@ const Footer = () => {
 
         {/* Footer Bottom */}
         <div className="border-t border-gray-300 mt-8 pt-4 text-center">
-          <p>© Miilan Helping Hand India Private Limited</p>
+          <p>© Shivam-singh-2025</p>
         </div>
       </div>
     </footer>

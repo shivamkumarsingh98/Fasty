@@ -1,4 +1,6 @@
 import { CgSearch } from "react-icons/cg";
+import { FaMicrophone } from "react-icons/fa6";
+import { FaCamera } from "react-icons/fa";
 import { IoCart } from "react-icons/io5";
 import { PiCurrencyInrDuotone } from "react-icons/pi";
 import { useDispatch, useSelector } from "react-redux";
@@ -8,6 +10,7 @@ import { MdAccountCircle } from "react-icons/md";
 import { RiLoginCircleLine } from "react-icons/ri";
 import { setSearchString } from "../../store/reducers/searchSlice";
 import { useState, useEffect } from "react";
+import { CameraUpload } from "../AI/CameraUpload";
 
 const Header = () => {
   const dispatch = useDispatch();
@@ -16,7 +19,7 @@ const Header = () => {
   const { cartItems } = useSelector((state) => state.cartSlice);
   const [placeholderIndex, setPlaceholderIndex] = useState(0);
   // placeholders
-  const placeholders = ["atta", "rice", "oil", "fruits", "milk", "vegetables"];
+  const placeholders = ["Atta", "Rice", "Oil", "Fruits", "Milk", "Vegetables"];
 
   // useffect for changing the placeholder index
   useEffect(() => {
@@ -72,7 +75,7 @@ const Header = () => {
           <CgSearch className="text-2xl text-green-500 " />
           <input
             type="text"
-            placeholder={`You can search "${placeholders[placeholderIndex]}"`}
+            placeholder={`You can search ${placeholders[placeholderIndex]}`}
             className="px-2 bg-transparent w-full outline-none text-green-500 "
             onClick={() => {
               navigate("/search");
@@ -81,6 +84,13 @@ const Header = () => {
               dispatch(setSearchString(e.target.value));
             }}
           />
+          <CameraUpload />
+          &nbsp;&nbsp;
+          <FaMicrophone
+            onClick={() => navigate("/search")}
+            className="text-2xl text-green-500 "
+          />
+          {/* <sup className="text-3xl bg-red-500">Ai</sup> */}
         </div>
         <div className="flex gap-4 justify-center items-center">
           {isloggedIn ? (
@@ -117,7 +127,7 @@ const Header = () => {
         <input
           type="text"
           placeholder={`You can search "${placeholders[placeholderIndex]}"`}
-          className="px-3 py-3 text-2xl font-poppins bg-transparent w-full outline-none text-green-500"
+          className="px-3 py-3 text-4xl font-poppins bg-transparent w-full outline-none text-green-500"
           onClick={() => {
             navigate("/search");
           }}
@@ -126,12 +136,12 @@ const Header = () => {
           }}
         />
       </div>
-      <div className="w-full bg-white text-center py-1 text-red-600 font-bold blink">
+      {/* <div className="w-full bg-white text-center py-1 text-red-600 font-bold blink">
         <h1>
           We are not live yet! Product listings and prices are not final. Get
           ready for 50% OFF and FREE Delivery when we launch in your area soon.
         </h1>
-      </div>
+      </div> */}
     </header>
   );
 };

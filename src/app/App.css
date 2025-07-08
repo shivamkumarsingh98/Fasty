@@ -3,7 +3,7 @@
 }
 
 .blue_linear_background {
-  background: linear-gradient(110.26deg, #3c006b 7.58%, #8c1d75 98.88%)
+  background: linear-gradient(110.26deg, #3c006b 7.58%, #8c1d75 98.88%);
 }
 
 .primary-bg-darker-pink {
@@ -15,7 +15,11 @@
 }
 
 .primary-linear-bg {
-  background-image: linear-gradient(98deg, rgb(214, 110, 177), rgb(201, 20, 156) 94%);
+  background-image: linear-gradient(
+    98deg,
+    rgb(214, 110, 177),
+    rgb(201, 20, 156) 94%
+  );
 }
 
 .hide-scrollbar::-webkit-scrollbar {
@@ -36,7 +40,6 @@
   display: none;
 }
 
-
 /* Custom Classes   */
 
 .flex-with-center-2 {
@@ -53,10 +56,6 @@
   gap: 6;
 }
 
-
-
-
-
 /* CUSTOMISING SWIPPER JS ARROWS  */
 :root {
   --swiper-navigation-size: 15px !important;
@@ -65,7 +64,7 @@
 .swiper-button-next,
 .swiper-button-prev {
   background-color: rgba(255, 50, 105, 1) !important;
-  right: .5rem !important;
+  right: 0.5rem !important;
   padding-top: 2rem !important;
   padding-bottom: 2rem !important;
   padding-right: 1rem !important;
@@ -75,13 +74,23 @@
   stroke: black !important;
   top: var(--swiper-navigation-top-offset, 50%) !important;
   border-radius: 5px !important;
-
 }
 
 .swiper-scrollbar-horizontal {
-  top: .1rem !important;
+  top: 0.1rem !important;
   background-color: white !important;
 }
 
+.heading.brag {
+  text-wrap: balance;
+  font-family: "Sora", sans-serif;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 1000;
+  line-height: 120%;
+  letter-spacing: -1px;
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity, 1));
+}
 
 /* ACCOUNT ROUTES CLASSES  */
